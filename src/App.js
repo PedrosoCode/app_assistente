@@ -5,6 +5,8 @@ import AboutPage from './pages/AboutPage';
 import FooterNavbarDashboard from './pages/FooterNavbarDashboard';
 import './bootstrap/bootstrap/css/bootstrap.min.css'
 import './bootstrap/bootstrap/js/bootstrap.min'
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cadastrar" element={<SignupPage />} />
         <Route path="/FNDashboard" element={<FooterNavbarDashboard />} />
       </Routes>
     </Router>
