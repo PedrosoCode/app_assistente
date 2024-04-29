@@ -7,6 +7,8 @@ import './bootstrap/bootstrap/css/bootstrap.min.css'
 import './bootstrap/bootstrap/js/bootstrap.min'
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import TestaJWT from './tests/TestaJWT'
+import ProtectedRoute from './components/ProtectedRoute'
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cadastrar" element={<SignupPage />} />
         <Route path="/FNDashboard" element={<FooterNavbarDashboard />} />
+        <Route path="/sessao" element={<TestaJWT />} />
       </Routes>
     </Router>
   );
