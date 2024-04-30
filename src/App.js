@@ -8,6 +8,8 @@ import './bootstrap/bootstrap/js/bootstrap.min'
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import TestaJWT from './tests/TestaJWT'
+import ImageUpload from './tests/ImageUpload';
+import ImageGallery from './tests/ImageGallery';
 import ProtectedRoute from './components/ProtectedRoute'
 
 
