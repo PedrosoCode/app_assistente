@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Estilos de carrosel */
+.carousel-item img {
+  height: 500px; /* altura fixa */
+  width: 100%; /* largura completa dentro do carrossel */
+  object-fit: cover; /* cobre a área designada sem distorcer a imagem */
+}
