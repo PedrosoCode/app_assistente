@@ -10,6 +10,7 @@ import SignupPage from './pages/SignupPage';
 import TestaJWT from './tests/TestaJWT'
 import ProtectedRoute from './components/ProtectedRoute'
 
+
 function App() {
   return (
     <Router>
