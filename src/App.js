@@ -8,6 +8,7 @@ import './bootstrap/bootstrap/js/bootstrap.min'
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import TestaJWT from './tests/TestaJWT'
+import CadastroBasico from './pages/CadastroBasico';
 import ImageUpload from './tests/ImageUpload';
 import ImageGallery from './tests/ImageGallery';
 import ProtectedRoute from './components/ProtectedRoute'
@@ -27,6 +28,7 @@ function App() {
         <Route path="/cadastrar" element={<SignupPage />} />
         <Route path="/FNDashboard" element={<FooterNavbarDashboard />} />
         <Route path="/sessao" element={<TestaJWT />} />
+        <Route path="/cadInfo" element={<CadastroBasico />} />
       </Routes>
     </Router>
   );
