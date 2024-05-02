@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import TestaJWT from './tests/TestaJWT'
 import CadastroBasico from './pages/CadastroBasico/CadastroBasico';
+import EntradaMaquina from './pages/EntradaMaquina/EntradaMaquina'
 import ImageUpload from './tests/ImageUpload';
 import ImageGallery from './tests/ImageGallery';
 import ProtectedRoute from './components/ProtectedRoute'
@@ -29,6 +30,7 @@ function App() {
         <Route path="/FNDashboard" element={<FooterNavbarDashboard />} />
         <Route path="/sessao" element={<TestaJWT />} />
         <Route path="/cadInfo" element={<CadastroBasico />} />
+        <Route path="/NovaEntrada" element={<EntradaMaquina />} />
       </Routes>
     </Router>
   );
