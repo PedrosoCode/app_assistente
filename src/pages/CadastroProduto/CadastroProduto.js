@@ -52,7 +52,7 @@ function CadastroProduto() {
         formData.append('categoria', categoriaSelecionada);
 
         try {
-            const response = await axios.post('http://localhost:3042/produto', formData, {
+            const response = await axios.post('http://localhost:3042/api/produto/cadastro', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
