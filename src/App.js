@@ -10,6 +10,7 @@ import SignupPage from './pages/SignupPage';
 import TestaJWT from './tests/TestaJWT'
 import CadastroBasico from './pages/CadastroBasico/CadastroBasico';
 import EntradaMaquina from './pages/EntradaMaquina/EntradaMaquina'
+import CadastroProduto from './pages/CadastroProduto/CadastroProduto';
 import ImageUpload from './tests/ImageUpload';
 import ImageGallery from './tests/ImageGallery';
 import ProtectedRoute from './components/ProtectedRoute'
@@ -31,6 +32,7 @@ function App() {
         <Route path="/sessao" element={<TestaJWT />} />
         <Route path="/cadInfo" element={<CadastroBasico />} />
         <Route path="/NovaEntrada" element={<EntradaMaquina />} />
+        <Route path="/NovoProduto" element={<CadastroProduto />} />
       </Routes>
     </Router>
   );

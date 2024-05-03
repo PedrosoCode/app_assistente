@@ -3,6 +3,7 @@ import { ProtectedRoute } from '../../components/ProtectedRoute';
 import MainNavbar from '../../components/MainNavbar';
 import MainFooter from '../../components/MainFooter';
 import styles from './CadastroBasico.module.scss';
+import { useState, useEffect } from 'react';
 
 function CadastroBasico() {
 
@@ -38,6 +39,20 @@ function CadastroBasico() {
         event.preventDefault(); // Prevents the default form submission behavior
         const tipoMaquina = document.getElementById('InputDefeito').value;
         const response = await fetch('http://localhost:3042/DefeitoInsert', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ tipo: tipoMaquina })
+        });
+        const responseData = await response.json();
+        console.log(responseData);
+    };
+
+    const handleSubmitCategoria = async (event) => {
+        event.preventDefault(); // Prevents the default form submission behavior
+        const tipoMaquina = document.getElementById('InputCategoria').value;
+        const response = await fetch('http://localhost:3042/CategoriaInsert', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -84,6 +99,19 @@ function CadastroBasico() {
                     <button type="submit" className="btn btn-primary">Enviar</button>
                 </form>
             </div>
+
+            <div className={styles.formContainer}>
+                <form onSubmit={handleSubmitCategoria}>
+                    <div className="mb-3">
+                        <label htmlFor="InputCategoria" className="form-label">Insira a categoria de produto a ser cadastrada</label>
+                        <input type="text" className="form-control" id="InputCategoria" aria-describedby="InputCategoriaHelp" />
+                        <div id="InputCategoriaHelp" className="form-text">Isso será usado em entradas</div>
+                    </div>
+                    <button type="submit" className="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+
 
             <MainFooter />
         </ProtectedRoute>
