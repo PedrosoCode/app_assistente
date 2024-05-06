@@ -18,6 +18,7 @@ function TestaJWT() {
     <ProtectedRoute>
       <div>
         <h1>Sua sessão deu certo!</h1>
+        Atenção, a função dessa página e unicamente de testar o funcionamento de logins, e componentes teste
         <button onClick={handleLogoff} className="btn btn-warning">Log Off</button> {/* Botão de logoff */}
         yay!
       </div>
